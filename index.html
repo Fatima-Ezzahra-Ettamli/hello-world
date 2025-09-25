@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('img.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .content{
+        width: 320px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        color: #fff;
+        border-radius: 10px;
+        padding: 30px 40px;
+    }
+    .content:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+    h1{
+        color: aliceblue;
+        font-size: 36px;
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="content">
+        <h1>Hello World</h1>
+    </div>
 </body>
 </html>
